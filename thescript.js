@@ -39,14 +39,14 @@ function displayDateTime() {
     // Display the day of the week and time on the webpage
     const dayOfWeekDiv = document.getElementById('dayOfWeek');
   
-    dayOfWeekDiv.textContent = `Current Day of the week: ${currentDay}`;
+    dayOfWeekDiv.textContent = formattedDayOfWeek;
   
     const currentTimeInMilliseconds = new Date();
   
     // Display the current time in UTC milliseconds on the webpage
     const currentTimeDiv = document.getElementById('currentTimeInMilliseconds');
   
-    currentTimeDiv.textContent = `Current UTC Time: ${currentTimeInMilliseconds.getTime()}`;
+    currentTimeDiv.textContent = `${currentTimeInMilliseconds.getTime()}`;
   }
   
   // Update the displayed date and time every second
